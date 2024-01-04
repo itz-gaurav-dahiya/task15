@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Gaurav Dahiya",
+    "line1": "House no 678",
+    "line2": "Ghukna",
+    "city": "Ghaziabad",
+    "Amount": 2954,
+    "items": 6,
+    "id": 1
+  },
+  {
+    "name": "Gaurav Dahiya",
+    "line1": "House no 678",
+    "line2": "Ghukna",
+    "city": "Ghaziabad",
+    "id": 2
+  },
+  {
+    "name": "Gaurav Dahiya",
+    "line1": "House no 678",
+    "line2": "Ghukna",
+    "city": "Ghaziabad",
+    "id": 3
+  },
+  {
+    "mydetail": {
+      "name": "Gaurav Dahiya",
+      "line1": "House no 678",
+      "line2": "Ghukna",
+      "city": "Ghaziabad",
+      "Amount": 1600,
+      "items": 1
+    },
+    "data": [
+      {
+        "prodId": 1,
+        "category": "Watches",
+        "description": "The look that made Swiss watches the toast of the world. Still unbeatable.",
+        "imgLink": "https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+        "name": "Silver",
+        "price": 1600,
+        "qty": 1,
+        "tprice": 1600
+      }
+    ],
+    "id": 4
+  },
+  {
+    "mydetail": {
+      "name": "Gaurav Dahiya",
+      "line1": "House no 678",
+      "line2": "Ghukna",
+      "city": "Ghaziabad",
+      "Amount": 1600,
+      "items": 1
+    },
+    "id": 5
+  },
+  {
+    "Amount": 1600,
+    "items": 1,
+    "city": "Ghaziabad",
+    "line1": "House no 678",
+    "line2": "Ghukna",
+    "name": "Gaurav Dahiya",
+    "id": 6
+  },
+  {
+    "Amount": 4998,
+    "items": 4,
+    "city": "Ghaziabad",
+    "line1": "House no 678",
+    "line2": "Ghukna",
+    "name": "Gaurav Dahiya",
+    "id": 7
+  },
+  {
+    "Amount": 1600,
+    "items": 1,
+    "city": "Ghaziabad",
+    "line1": "House no 678",
+    "line2": "Ghukna",
+    "name": "Gaurav Dahiya",
+    "id": 8
+  }
+]
