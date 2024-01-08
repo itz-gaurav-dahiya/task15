@@ -63,7 +63,9 @@ app.get('/products/:id', async (req, res) => {
   });
   
 
-app.post('/products', async (req, res) => {
+  const crypto = require('crypto');
+
+  app.post('/products', async (req, res) => {
     try {
       const newProduct = req.body;
   
@@ -71,8 +73,8 @@ app.post('/products', async (req, res) => {
       const productsData = await fs.readFile(messagesFilePath, 'utf8');
       let products = JSON.parse(productsData);
   
-      // Assuming each product has a unique ID, you might want to generate one or use another approach
-      newProduct.prodId = products.length + 1;
+      // Generate a unique 4-digit product ID
+      newProduct.prodId = generateUniqueProductId(products);
   
       products.push(newProduct);
   
@@ -85,6 +87,16 @@ app.post('/products', async (req, res) => {
       res.status(500).json({ message: 'Internal Server Error', error: error.message });
     }
   });
+  
+  function generateUniqueProductId(products) {
+    let uniqueId;
+    do {
+      uniqueId = crypto.randomBytes(2).toString('hex'); // Generates a 4-digit hexadecimal string
+    } while (products.some(product => product.prodId === uniqueId));
+  
+    return uniqueId;
+  }
+  
   app.delete('/products/:id', async (req, res) => {
     try {
       const productId = parseInt(req.params.id);
